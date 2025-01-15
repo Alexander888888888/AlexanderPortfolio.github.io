@@ -196,6 +196,39 @@ nav a:not(#left):hover:after {
 
 }
 
+@media (max-width: 464px) {
+
+    #landingPage nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #left {
+        /* padding-left: 10px;
+        margin-left: 0;
+        width: fit-content; */
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: fit-content;
+    }
+
+    .burger {
+        /* right: 10px; */
+
+        position: static;
+
+
+    }
+}
+
+@media (max-width: 358px) {
+    #left {
+        font-size: 25px;
+    }
+}
+
 
 
 
@@ -821,6 +854,17 @@ hr {
     }
 }
 
+@media (max-width: 464px) {
+    #technologies div {
+        width: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    #technologies div {
+        width: 125px;
+    }
+}
 
 
 
@@ -976,6 +1020,17 @@ hr {
 
     .project-card p {
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 464px) {
+    .project-card {
+        margin: 0 30px 20px 30px;
+        padding: 5px;
+    }
+
+    .text_content {
+        padding: 10px 0 10px 0 !important
     }
 }
 
