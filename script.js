@@ -86,8 +86,10 @@ function handleBurgerClick() {
 
         if (burger.classList.contains("active")) {
             setActiveColor();
+            enableClickAway();
         } else {
             resetColor();
+            disableClickAway();
         }
     } else {
         // Large screen: Maintain hover behavior
@@ -101,6 +103,25 @@ function handleBurgerClick() {
             setActiveColor();
         }
     }
+}
+
+function handleOutsideClick(event) {
+    if (!burger.contains(event.target) && !navMenu.contains(event.target)) {
+        burger.classList.remove("active");
+        navMenu.classList.remove("active");
+        resetColor();
+        disableClickAway(); // Remove the event listener after closing
+    }
+}
+
+// Enable the "click-away" functionality
+function enableClickAway() {
+    document.addEventListener("click", handleOutsideClick); // Add event listener to document
+}
+
+// Disable the "click-away" functionality
+function disableClickAway() {
+    document.removeEventListener("click", handleOutsideClick); // Remove event listener from document
 }
 
 // Hover behavior for large screens
