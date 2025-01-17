@@ -1076,7 +1076,6 @@ hr {
     border: none;
     outline: none;
     padding-left: 25px;
-    font-weight: 500;
     color: #666;
     border-radius: 50px;
     box-sizing: border-box;
@@ -1086,8 +1085,14 @@ hr {
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
+}
+
+.contactLeft input,
+.contactLeft textarea {
+    font-weight: unset;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: 500 !important;
+    font-size: 0.8em;
 }
 
 .contactInputs:focus {
