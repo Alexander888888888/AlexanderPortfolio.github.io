@@ -38,6 +38,7 @@ const typeEffect = () => {
 typeEffect();
 
 
+
 const elements = document.querySelectorAll('.animateOnScroll', '.shimmerOnScroll');
 
 const observer = new IntersectionObserver((entries) => {
@@ -56,10 +57,64 @@ elements.forEach(element => {
 });
 
 
+
 const burger = document.querySelector(".burger");
 const navMenu = document.querySelector(".navMenu");
 
-burger.addEventListener("click", () => {
-    burger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
+// Helper function to apply active color
+function setActiveColor() {
+    burger.querySelectorAll(".bar").forEach(bar => {
+        bar.style.backgroundColor = "#c084fc";
+    });
+}
+
+// Helper function to reset color
+function resetColor() {
+    burger.querySelectorAll(".bar").forEach(bar => {
+        bar.style.backgroundColor = "#ddd";
+    });
+}
+
+// Function to handle behavior based on screen size
+function handleBurgerClick() {
+    const isSmallScreen = window.matchMedia("(max-width: 1000px)").matches;
+
+    if (isSmallScreen) {
+        // Small screen: Toggle active and set color
+        burger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+
+        if (burger.classList.contains("active")) {
+            setActiveColor();
+        } else {
+            resetColor();
+        }
+    } else {
+        // Large screen: Maintain hover behavior
+        if (burger.classList.contains("active")) {
+            burger.classList.remove("active");
+            navMenu.classList.remove("active");
+            resetColor();
+        } else {
+            burger.classList.add("active");
+            navMenu.classList.add("active");
+            setActiveColor();
+        }
+    }
+}
+
+// Hover behavior for large screens
+burger.addEventListener("mouseover", () => {
+    if (!burger.classList.contains("active")) {
+        setActiveColor();
+    }
+});
+
+burger.addEventListener("mouseout", () => {
+    if (!burger.classList.contains("active")) {
+        resetColor();
+    }
+});
+
+// Click behavior for all screens
+burger.addEventListener("click", handleBurgerClick);

@@ -129,9 +129,7 @@ nav a:not(#left):hover:after {
     background-color: #ddd;
 }
 
-.burger:hover .bar {
-    background-color: #c084fc;
-}
+
 
 @media (max-width: 1000px) {
     .burger {
@@ -149,14 +147,6 @@ nav a:not(#left):hover:after {
     .burger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(135deg);
     }
-
-    .burger.active .bar {
-        background-color: #c084fc;
-
-    }
-
-    /* Maintain hover color even when active */
-
 
     .burger .bar {
         transition: transform 0.3s ease, background-color 0.5s ease, opacity 0s;
@@ -1097,6 +1087,7 @@ hr {
     padding-top: 15px;
     border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 .contactInputs:focus {
