@@ -139,3 +139,18 @@ burger.addEventListener("mouseout", () => {
 
 // Click behavior for all screens
 burger.addEventListener("click", handleBurgerClick);
+
+
+
+
+
+const contactForm = document.getElementById('contactForm');
+
+// Add an event listener to handle form submission
+contactForm.addEventListener('submit', function (event) {
+
+    setTimeout(() => {
+        // Clear all inputs after submission
+        contactForm.reset();
+    }, 500); // Slight delay to ensure submission completes
+});
