@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    background-color: #ddd;
+    background-color: #ffa600;
     /* background-image: linear-gradient(112.5deg, #ff8811 0%, #ff8811 10%, #beb4b4 10%, #beb4b4 53%, #c084fc 53%, #c084fc 55%, #0cabea 55%, #0cabea 60%, #beb4b4 60%, #beb4b4 88%, #beb4b4 88%, #beb4b4 91%, #0cabea 91%, #0cabea 100%), linear-gradient(157.5deg, #ff8811 0%, #ff8811 10%, #beb4b4 10%, #beb4b4 53%, #c084fc 53%, #c084fc 55%, #0cabea 55%, #0cabea 60%, #beb4b4 60%, #beb4b4 88%, #beb4b4 88%, #beb4b4 91%, #0cabea 91%, #0cabea 100%), linear-gradient(495deg, #ff8811 0%, #ff8811 10%, #ddd 10%, #beb4b4 53%, #c084fc 53%, #c084fc 55%, #0cabea 55%, #0cabea 60%, #beb4b4 60%, #beb4b4 88%, #beb4b4 88%, #beb4b4 91%, #0cabea 91%, #0cabea 100%), linear-gradient(450deg, #beb4b4, #c084fc);
     background-blend-mode: overlay, overlay, overlay, normal; */
 
