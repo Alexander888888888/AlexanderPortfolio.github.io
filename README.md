@@ -40,14 +40,11 @@ Contributions are welcome! If you would like to suggest improvements or report i
    ```
 5. Submit a pull request.
 
-## License
-This project is open source and available under the [MIT License](LICENSE).
-
 ## Credits
 - Design inspiration from various online portfolios.
 
 ## Contact
 Feel free to reach out to me for collaboration or inquiries:
 - **Email**: alexander.slyfield@hotmail.com
-- **LinkedIn**: [Your LinkedIn Profile](www.linkedin.com/in/alexander-slyfield-7a4b23257)
-- **GitHub**: [Your GitHub Profile](https://github.com/Alexander888888888)
+- **LinkedIn**: [LinkedIn Profile](www.linkedin.com/in/alexander-slyfield-7a4b23257)
+
