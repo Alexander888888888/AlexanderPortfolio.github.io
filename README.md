@@ -1,7 +1,7 @@
 # Portfolio Website
 
 ## Description
-This is a personal portfolio website designed to showcase my projects, skills, and experience as a budding software engineer. The website features a responsive design, interactive elements, and a clean layout that highlights my work and provides easy navigation for visitors.
+This is a personal portfolio website designed to showcase my projects, skills, and experience. The website features a responsive design, interactive elements, and a clean layout that highlights my work and provides easy navigation for visitors.
 
 ## Features
 - **Landing Page**: A visually engaging landing page featuring moving background with a brief overview and links to navigate the site.
